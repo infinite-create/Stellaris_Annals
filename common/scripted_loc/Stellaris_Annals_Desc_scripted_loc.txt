@@ -1,0 +1,9 @@
+Stellaris_Annals_News_Desc = {
+	name = GetStellarisNewsDesc
+	text = {
+		localization_key = Research_Jump_Drive_Desc
+		trigger = {
+			last_increased_tech = tech_jump_drive_1
+		}
+	}
+}

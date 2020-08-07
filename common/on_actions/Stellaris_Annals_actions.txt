@@ -1,0 +1,5 @@
+on_tech_increased = {
+	events = {
+		Stellaris_Annals.1
+	}
+}

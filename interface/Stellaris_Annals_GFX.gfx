@@ -1,6 +1,6 @@
 spriteTypes = {
 	spriteType = {
 		name = "GFX_News_Background"
-		textureFile = "gfx/interface/backgrouds/News_Background.dds"
+		textureFile = "gfx/interface/backgrounds/News_Background.dds"
 	}
 }
