@@ -93,11 +93,11 @@ guiTypes = {
 			instantTextBoxType={
 				name = "action_title"
 				font = "large_title_font"
-				#position = { x = 400 y = 50 }
-				#format = CENTER_UP
-				orientation = CENTER_UP
-				maxWidth = 200
-				alwaysTransparent = yes
+				position = { x = 0 y = -50 }
+				maxWidth = 800
+				vertical_alignment = CENTER
+				format = CENTER
+				#orientation = CENTER_UP
 				text_color_code = "Y"
 			}
 			
@@ -160,14 +160,14 @@ guiTypes = {
 				orientation = CENTER_UP
 				#format = CENTER_UP
 				font = "malgun_goth_24"
-				text = "好起来了"
+				text = "Additional_TextBox_Title_1"
 			}
 			instantTextboxType = {
 				name = "Additional_TextBox_Desc_1"
 				position = { x = 40 y = 80 }
 				size = {x = 300 y = 300 }
 				font = "cg_16b"
-				text = "随着工程的进步，这个ui逐渐的好起来了"
+				text = "Additional_TextBox_Desc_1"
 				scrollbartype = "standardtext_slider"
 				borderSize = { x = 10 y = 10 }
 			}

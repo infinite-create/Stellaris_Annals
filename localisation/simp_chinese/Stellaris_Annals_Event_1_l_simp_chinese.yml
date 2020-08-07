@@ -1,6 +1,8 @@
-l_simp_chinese:
- Stellaris_Annals.1.name:0 "[root.GetStellarisNewsTitle]"
- Stellaris_Annals.1.desc:0 "[root.GetStellarisNewsDesc]"
+﻿l_simp_chinese:
+ Stellaris_Annals.1.name:0 "[GetCountryNameTarget.GetStellarisNewsTitle]"
+ Stellaris_Annals.1.desc:0 "[GetCountryNameTarget.GetStellarisNewsDesc]"
  Research_Jump_Drive_Title:0 "“曲率引擎”——反智主义的盛宴"
- Research_Jump_Drive_Desc:0 "寻访系列专栏作者——戴米尔 帕维其\n\n最近，一位男性公民引起了舆论的广泛关注，其自称“受不可名状之物启发的物理学博士”，曾经多次在超通讯论坛上宣称自己“发明了曲率引擎，是一种全新的超光速手段”，而一位国立物理学院院士指出“曲率引擎是是不符合我们这个宇宙的规律的，只能是存在于幻想之中的产物”，而有网友表示“对于这种民科行为，政府应该立法禁止”。根据国立科研综合院公布的数据表示，仅仅在今年就有超过两百个个体或者团体宣称自己发明或者完成了“曲率引擎”。"
+ Research_Jump_Drive_Desc:0 "[root.GetName]寻访系列专栏作者——戴米尔 帕维其\n\n最近，一位男性公民引起了舆论的广泛关注，其自称“受不可名状之物启发的物理学博士”，曾经多次在超通讯论坛上宣称自己“发明了曲率引擎，是一种全新的超光速手段”，而一位国立物理学院院士指出“曲率引擎是是不符合我们这个宇宙的规律的，只能是存在于幻想之中的产物”，而有网友表示“对于这种民科行为，政府应该立法禁止”。根据国立科研综合院公布的数据表示，仅仅在今年就有超过两百个个体或者团体宣称自己发明或者完成了“曲率引擎”。"
+ Additional_TextBox_Title_1:0 ""
+ Additional_TextBox_Desc_1:0 ""
  

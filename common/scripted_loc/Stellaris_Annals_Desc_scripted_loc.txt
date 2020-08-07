@@ -3,7 +3,9 @@ Stellaris_Annals_News_Desc = {
 	text = {
 		localization_key = Research_Jump_Drive_Desc
 		trigger = {
-			last_increased_tech = tech_jump_drive_1
+			owner = {
+				last_increased_tech = tech_jump_drive_1
+			}
 		}
 	}
 }

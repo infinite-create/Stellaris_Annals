@@ -6,10 +6,40 @@ country_event = {
 	diplomatic = yes
 	custom_gui = News_Framework
 
+	immediate = {
+		if = {
+			limit = { 
+				NOT = {
+					has_country_flag = GetCountryName
+				}
+			}
+			set_country_flag = GetCountryName
+			owner = {
+				save_global_event_target_as = GetCountryNameTarget
+			}
+		}
+
+	}
+
 	trigger = {
 		is_ai = no
+		last_increased_tech = tech_jump_drive_1
 	}
 
 	title = Stellaris_Annals.1.name
 	desc = Stellaris_Annals.1.desc
+}
+
+country_event = {
+	id = Stellaris_Annals.2
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		add_research_option = tech_jump_drive_1
+		add_tech_progress = {
+			tech = tech_jump_drive_1
+			progress = 1
+		}
+	}
 }
