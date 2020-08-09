@@ -1,13 +1,17 @@
 namespace = Stellaris_Annals
 
-country_event = {
+country_event = {#正常周报
 	id = Stellaris_Annals.1
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = News_Framework
 
+	trigger = {
+		is_ai = no
+	}
+
 	immediate = {
-		if = {
+		if = {#获取国家作用域
 			limit = { 
 				NOT = {
 					has_country_flag = GetCountryName
@@ -18,12 +22,10 @@ country_event = {
 				save_global_event_target_as = GetCountryNameTarget
 			}
 		}
-
-	}
-
-	trigger = {
-		is_ai = no
-		last_increased_tech = tech_jump_drive_1
+		country_event = {
+			id = Stellaris_Annals.1
+			days = 180
+		}
 	}
 
 	title = Stellaris_Annals.1.name
@@ -41,5 +43,16 @@ country_event = {
 			tech = tech_jump_drive_1
 			progress = 1
 		}
+	}
+}
+
+country_event = {#加刊
+	id = Stellaris_Annals.2
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = News_Framework
+
+	trigger = {
+		is_ai = no
 	}
 }

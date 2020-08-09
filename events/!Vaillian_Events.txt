@@ -1,0 +1,80 @@
+namespace = country
+
+country_event = {#宜居星球
+	id = country.50
+	title = "country.50.name"
+	desc = "country.50.desc"
+	picture = GFX_evt_microscopic_life
+	show_sound = event_laboratory_sound
+	
+	trigger = {
+		is_ai = no
+		NOR = {
+			has_country_flag = habitable_worlds_survey
+			has_ethic = ethic_gestalt_consciousness
+		}
+		has_country_flag = first_alien_life
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+	}
+	
+	immediate = {
+		set_country_flag = habitable_worlds_survey
+		set_timed_country_flag = {
+			flag = time_habitable_worlds_survey
+			days = 180
+		}
+	}
+
+	option = {
+		name = "country.50.a"
+		begin_event_chain = {
+			event_chain = "survey_habitable_worlds_chain"
+			target = ROOT
+		}
+	}
+	option = {
+		name = "country.50.b"
+		add_resource = { influence = 20 }
+	}
+}
+
+country_event = {#大灭绝
+	id = country.1100
+	title = "country.1100.name"
+	desc = "country.1100.desc"
+	show_sound = event_scanner
+	picture = GFX_evt_galactic_senate
+	location = root
+
+	#mean_time_to_happen = { months = 40 }
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+		NOR = {
+			has_ethic = ethic_gestalt_consciousness
+			has_origin = origin_life_seeded
+			has_country_flag = starting_event
+		}
+	}
+
+	immediate = { 
+		set_country_flag = starting_event 
+		set_timed_country_flag = {
+			flag = time_mass_extinction
+			days = 180
+		}
+	}
+
+	option = {
+		name = "country.1100.a"
+		begin_event_chain = {
+			event_chain = "mass_extinction_chain"
+			target = root
+		}
+		hidden_effect = { country_event = { id = country.1101 } }
+	}
+}

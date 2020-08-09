@@ -1,11 +1,30 @@
 Stellaris_Annals_News_Desc = {
 	name = GetStellarisNewsDesc
-	text = {
+	text = {#研究跃迁引擎
 		localization_key = Research_Jump_Drive_Desc
 		trigger = {
 			owner = {
 				last_increased_tech = tech_jump_drive_1
 			}
 		}
+	}
+	text = {#宜居星球调查
+		localization_key = Habitable_Worlds_Survey_Desc
+		trigger = {
+			owner = {
+				has_country_flag = time_habitable_worlds_survey
+			}
+		}
+	}
+	text = {#大灭绝
+		localization_key = The_Mass_Extinction_Desc
+		trigger = {
+			owner = {
+				has_country_flag = time_mass_extinction
+			}
+		}
+	}
+	text = {
+		localization_key = Default_News_Desc
 	}
 }

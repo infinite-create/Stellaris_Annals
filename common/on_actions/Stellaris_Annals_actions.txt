@@ -1,3 +1,9 @@
+on_game_start_country = {
+	events = {
+		Stellaris_Annals.1
+	}
+}
+
 on_tech_increased = {
 	events = {
 		Stellaris_Annals.1
