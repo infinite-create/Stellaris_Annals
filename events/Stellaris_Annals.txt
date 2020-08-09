@@ -46,13 +46,64 @@ country_event = {
 	}
 }
 
-country_event = {#加刊
-	id = Stellaris_Annals.2
+country_event = {#三大飞升专报
+	id = Stellaris_Annals.3
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = News_Framework
 
 	trigger = {
 		is_ai = no
+		if = {
+			limit = { 
+				has_ascension_perk = ap_synthetic_evolution
+			}
+			NOT = {
+				has_country_flag = get_ap_synthetic_evolution
+			}
+		}
+		else_if = {
+			limit = { 
+				has_ascension_perk = ap_transcendence
+			}
+			NOT = {
+				has_country_flag = get_ap_transcendence
+			}
+		}
+		else_if = {
+			limit = { 
+				has_ascension_perk = ap_evolutionary_mastery
+			}
+			NOT = {
+				has_country_flag = get_ap_evolutionary_mastery
+			}
+		}
+		else = {
+			always = no
+		}
 	}
+
+	immediate = {
+		if = {
+			limit = { 
+				has_ascension_perk = ap_synthetic_evolution
+			}
+			set_country_flag = get_ap_synthetic_evolution
+		}
+		else_if = {
+			limit = { 
+				has_ascension_perk = ap_transcendence
+			}
+			set_country_flag = get_ap_transcendence
+		}
+		else_if = {
+			limit = {
+				has_ascension_perk = ap_evolutionary_mastery
+			}
+			set_country_flag = get_ap_evolutionary_mastery
+		}
+	}
+
+	title = Stellaris_Annals.3.name
+	desc = Stellaris_Annals.3.desc
 }

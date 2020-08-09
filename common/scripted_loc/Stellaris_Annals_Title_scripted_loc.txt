@@ -28,3 +28,40 @@ Stellaris_Annals_News_Title = {
 		localization_key = Default_News_Title
 	}
 }
+
+Stellaris_Annals_AP_News_Title = {
+	name = GetStellarisAnnalsAPNewsTitle
+	text = {#合成进化
+		localization_key = Get_Ap_Synthetic_Evolution_Title
+		trigger = {
+			owner = {
+				has_ascension_perk = ap_synthetic_evolution
+				NOT = {
+					has_country_flag = get_ap_synthetic_evolution
+				}
+			}
+		}
+	}
+	text = {#超凡入圣
+		localization_key = Get_Ap_Transcendence_Title
+		trigger = {
+			owner = {
+				has_ascension_perk = ap_transcendence
+				NOT = {
+					has_country_flag = get_ap_transcendence
+				}
+			}
+		}
+	}
+	text = {#掌控进化
+		localization_key = Get_Ap_Evolutionary_Mastery_Title
+		trigger = {
+			owner = {
+				has_ascension_perk = ap_evolutionary_mastery
+				NOT = {
+					has_country_flag = get_ap_evolutionary_mastery
+				}
+			}
+		}
+	}
+}

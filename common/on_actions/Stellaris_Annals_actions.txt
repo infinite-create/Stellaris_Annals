@@ -4,6 +4,12 @@ on_game_start_country = {
 	}
 }
 
+on_monthly_pulse_country = {
+	events = {
+		Stellaris_Annals.3
+	}
+}
+
 on_tech_increased = {
 	events = {
 		Stellaris_Annals.1
