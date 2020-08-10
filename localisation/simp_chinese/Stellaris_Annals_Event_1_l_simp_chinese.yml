@@ -1,6 +1,6 @@
 ﻿l_simp_chinese:
  Stellaris_Annals.1.name:0 "[GetCountryNameTarget.GetStellarisNewsTitle]"
- Stellaris_Annals.1.desc:0 "[GetCountryNameTarget.GetStellarisNewsDesc]"
+ Stellaris_Annals.1.desc:0 "[GetCountryNameTarget.GetStellarisNewsDesc]\n\n§Y[Society_Research_Leader_Target.GetName]§!"
 
  Stellaris_Annals.2.name:0 "[GetCountryNameTarget.GetStellarisAnnalsAPNewsTitle]"
  Stellaris_Annals.2.desc:0 "[GetCountryNameTarget.GetStellarisAnnalsAPNewsDesc]"

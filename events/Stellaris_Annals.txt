@@ -58,24 +58,24 @@ country_event = {#正常周报
 	}
 
 	immediate = {
-		random_owned_leader = {
-			limit = {
-				is_researching_area = society
-			}
-			save_global_event_target_as = Society_Research_Leader_Target
-		}
-		random_owned_leader = {
-			limit = {
-				is_researching_area = physics
-			}
-			save_global_event_target_as = Physics_Research_Leader_Target
-		}
-		random_owned_leader = {
-			limit = {
-				is_researching_area = engineering
-			}
-			save_global_event_target_as = Engineering_Research_Leader_Target
-		}
+		# random_owned_leader = {
+		# 	limit = {
+		# 		is_researching_area = society
+		# 	}
+		# 	save_event_target_as = Society_Research_Leader_Target
+		# }
+		# random_owned_leader = {
+		# 	limit = {
+		# 		is_researching_area = physics
+		# 	}
+		# 	save_event_target_as = Physics_Research_Leader_Target
+		# }
+		# random_owned_leader = {
+		# 	limit = {
+		# 		is_researching_area = engineering
+		# 	}
+		# 	save_event_target_as = Engineering_Research_Leader_Target
+		# }
 		owner = {
 			if = {
 				limit = { 
