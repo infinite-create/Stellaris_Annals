@@ -8,6 +8,22 @@ Stellaris_Annals_News_Desc = {
 			}
 		}
 	}
+	text = {#研究贝石发电场
+		localization_key = Research_Mine_Betharian_Desc
+		trigger = {
+			owner = {
+				last_increased_tech = tech_mine_betharian
+			}
+		}
+	}
+	text = {
+		localization_key = Research_Droid_Workers_Desc
+		trigger = {
+			owner = {
+				has_technology = tech_droid_workers
+			}
+		}
+	}
 	text = {#宜居星球调查
 		localization_key = Habitable_Worlds_Survey_Desc
 		trigger = {
@@ -23,9 +39,6 @@ Stellaris_Annals_News_Desc = {
 				has_country_flag = time_mass_extinction
 			}
 		}
-	}
-	text = {
-		localization_key = Default_News_Desc
 	}
 }
 Stellaris_Annals_AP_News_Desc = {

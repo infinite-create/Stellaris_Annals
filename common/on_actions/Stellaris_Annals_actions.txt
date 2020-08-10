@@ -1,12 +1,14 @@
 on_game_start_country = {
 	events = {
 		Stellaris_Annals.1
+		Stellaris_Annals.0
 	}
 }
 
 on_monthly_pulse_country = {
 	events = {
-		Stellaris_Annals.3
+		Stellaris_Annals.2
+		Stellaris_Annals.10
 	}
 }
 

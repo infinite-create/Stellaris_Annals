@@ -1,5 +1,52 @@
 namespace = Stellaris_Annals
 
+country_event = {#获取国家Target
+	id = Stellaris_Annals.0
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		is_ai = no
+	}
+
+	immediate = {
+		owner = {
+			save_global_event_target_as = GetCountryNameTarget
+		}
+	}
+}
+
+# country_event = {#获取某些Target
+# 	id = Stellaris_Annals.10
+# 	is_triggered_only = yes
+# 	hide_window = yes
+
+# 	trigger = {
+# 		is_ai = no
+# 	}
+
+# 	immediate = {
+# 		random_owned_leader = {
+# 			limit = {
+# 				is_researching_area = society
+# 			}
+# 			save_global_event_target_as = Society_Research_Leader_Target
+# 		}
+# 		random_owned_leader = {
+# 			limit = {
+# 				is_researching_area = physics
+# 			}
+# 			save_global_event_target_as = Physics_Research_Leader_Target
+# 		}
+# 		random_owned_leader = {
+# 			limit = {
+# 				is_researching_area = engineering
+# 			}
+# 			save_global_event_target_as = Engineering_Research_Leader_Target
+# 		}
+# 	}
+# }
+
 country_event = {#正常周报
 	id = Stellaris_Annals.1
 	is_triggered_only = yes
@@ -11,16 +58,34 @@ country_event = {#正常周报
 	}
 
 	immediate = {
-		if = {#获取国家作用域
-			limit = { 
-				NOT = {
-					has_country_flag = GetCountryName
-				}
+		random_owned_leader = {
+			limit = {
+				is_researching_area = society
 			}
-			set_country_flag = GetCountryName
-			owner = {
+			save_global_event_target_as = Society_Research_Leader_Target
+		}
+		random_owned_leader = {
+			limit = {
+				is_researching_area = physics
+			}
+			save_global_event_target_as = Physics_Research_Leader_Target
+		}
+		random_owned_leader = {
+			limit = {
+				is_researching_area = engineering
+			}
+			save_global_event_target_as = Engineering_Research_Leader_Target
+		}
+		owner = {
+			if = {
+				limit = { 
+					NOT = {
+						exists = event_target:GetCountryNameTarget
+					}
+				}
 				save_global_event_target_as = GetCountryNameTarget
 			}
+			
 		}
 		country_event = {
 			id = Stellaris_Annals.1
@@ -33,21 +98,21 @@ country_event = {#正常周报
 }
 
 country_event = {
-	id = Stellaris_Annals.2
+	id = Stellaris_Annals.4
 	is_triggered_only = yes
 	hide_window = yes
 
 	immediate = {
-		add_research_option = tech_jump_drive_1
+		add_research_option = tech_droid_workers
 		add_tech_progress = {
-			tech = tech_jump_drive_1
+			tech = tech_droid_workers
 			progress = 1
 		}
 	}
 }
 
 country_event = {#三大飞升专报
-	id = Stellaris_Annals.3
+	id = Stellaris_Annals.2
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = News_Framework
@@ -102,6 +167,20 @@ country_event = {#三大飞升专报
 			}
 			set_country_flag = get_ap_evolutionary_mastery
 		}
+	}
+
+	title = Stellaris_Annals.2.name
+	desc = Stellaris_Annals.2.desc
+}
+
+country_event = {#战争专栏
+	id = Stellaris_Annals.3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = News_Framework
+
+	trigger = {
+		
 	}
 
 	title = Stellaris_Annals.3.name
