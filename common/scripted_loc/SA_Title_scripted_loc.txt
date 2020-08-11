@@ -1,18 +1,11 @@
 Stellaris_Annals_News_Title = {
 	name = GetStellarisNewsTitle
-	text = {#研究跃迁引擎
-		localization_key = Research_Jump_Drive_Title
-		trigger = {
-			owner = {
-				last_increased_tech = tech_jump_drive_1
-			}
-		}
-	}
+	
 	text = {#研究贝石发电场
 		localization_key = Research_Mine_Betharian_Title
 		trigger = {
 			owner = {
-				last_increased_tech = tech_mine_betharian
+				has_country_flag = research_tech_mine_betharian
 			}
 		}
 	}
@@ -20,7 +13,15 @@ Stellaris_Annals_News_Title = {
 		localization_key = Research_Droid_Workers_Title
 		trigger = {
 			owner = {
-				has_technology = tech_droid_workers
+				has_country_flag = research_tech_droid_workers
+			}
+		}
+	}
+	text = {#研究跃迁引擎
+		localization_key = Research_Jump_Drive_Title
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_jump_drive_1
 			}
 		}
 	}
@@ -37,6 +38,14 @@ Stellaris_Annals_News_Title = {
 		trigger = {
 			owner = {
 				has_country_flag = time_mass_extinction
+			}
+		}
+	}
+	text = {#第三次殖民遗落球
+		localization_key = Find_In_Pc_Relic_Colonies_Title
+		trigger = {
+			owner = {
+				has_country_flag = find_in_pc_relic_colonies
 			}
 		}
 	}
@@ -73,6 +82,17 @@ Stellaris_Annals_AP_News_Title = {
 				has_ascension_perk = ap_evolutionary_mastery
 				NOT = {
 					has_country_flag = get_ap_evolutionary_mastery
+				}
+			}
+		}
+	}
+	text = {#血肉苦弱
+		localization_key = Get_Ap_The_Flesh_Is_Weak_Title
+		trigger = {
+			owner = {
+				has_ascension_perk = ap_the_flesh_is_weak
+				NOR = {
+					has_country_flag = get_ap_the_flesh_is_weak
 				}
 			}
 		}

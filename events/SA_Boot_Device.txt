@@ -1,0 +1,96 @@
+namespace = SA_Boot_Deveice
+
+country_event = {#获取国家名称
+	id = SA_Boot_Deveice.0
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		is_ai = no
+	}
+
+	immediate = {
+		owner = {
+			save_global_event_target_as = GetCountryNameTarget
+		}
+	}
+}
+
+country_event = {#研究科技引导器
+	id = SA_Boot_Deveice.1
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		OR = {
+			last_increased_tech = tech_mine_betharian 
+			last_increased_tech = tech_droid_workers
+			last_increased_tech = tech_jump_drive_1
+		}
+		is_ai = no
+	}
+
+	immediate = {
+		if = {#贝石发电
+			limit = { 
+				last_increased_tech = tech_mine_betharian 
+			}
+			set_timed_country_flag = {
+				flag = research_tech_mine_betharian
+				days = 180
+			}
+		}
+		if = {#智能人
+			limit = { 
+				last_increased_tech = tech_droid_workers
+			}
+			set_timed_country_flag = {
+				flag = research_tech_droid_workers
+				days = 180
+			}
+		}
+		if = {
+			limit = {#跃迁引擎
+				last_increased_tech = tech_jump_drive_1
+			}
+			set_timed_country_flag = {
+				flag = research_tech_jump_drive_1
+				days = 180
+			}
+		}
+	}
+}
+
+planet_event = {#殖民地引导器
+	id = SA_Boot_Deveice.2
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {#统计第几次殖民遗落球
+		is_planet_class = pc_relic
+	}
+
+	immediate = {
+		owner = {
+			change_variable = {
+				which = num_pc_relic_colonies
+				value = 1
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						which = num_pc_relic_colonies
+						value = 1
+					}
+				}
+				set_timed_country_flag = {
+					flag = find_in_pc_relic_colonies
+					days = 180
+				}
+				prev = {
+					save_global_event_target_as = pc_relic_colonies_1
+				}
+			}
+		}
+	}
+}
