@@ -24,6 +24,14 @@ Stellaris_Annals_News_Desc = {
 			}
 		}
 	}
+	text = {#研究极乐广场
+		localization_key = Research_Hyper_Entertainment_Forum_Desc
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_hyper_entertainment_forum
+			}
+		}
+	}
 }
 Stellaris_Annals_AP_News_Desc = {
 	name = GetStellarisAnnalsAPNewsDesc

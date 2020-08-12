@@ -25,6 +25,14 @@ Stellaris_Annals_News_Title = {
 			}
 		}
 	}
+	text = {
+		localization_key = Research_Hyper_Entertainment_Forum_Title
+		trigger = {
+			owner = {
+				has_country_flag = research_tech_hyper_entertainment_forum
+			}
+		}
+	}
 	text = {#宜居星球调查
 		localization_key = Habitable_Worlds_Survey_Title
 		trigger = {
@@ -45,7 +53,7 @@ Stellaris_Annals_News_Title = {
 		localization_key = Find_In_Pc_Relic_Colonies_Title
 		trigger = {
 			owner = {
-				has_country_flag = find_in_pc_relic_colonies
+				has_country_flag = find_in_pc_relic_colonies_1
 			}
 		}
 	}

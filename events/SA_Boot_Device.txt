@@ -58,6 +58,15 @@ country_event = {#研究科技引导器
 				days = 180
 			}
 		}
+		if = {
+			limit = {#极乐广场 
+				last_increased_tech = tech_hyper_entertainment_forum
+			}
+			set_timed_country_flag = {
+				flag = research_tech_hyper_entertainment_forum
+				days = 180
+			}
+		}
 	}
 }
 
@@ -84,13 +93,14 @@ planet_event = {#殖民地引导器
 					}
 				}
 				set_timed_country_flag = {
-					flag = find_in_pc_relic_colonies
+					flag = find_in_pc_relic_colonies_1
 					days = 180
 				}
 				prev = {
 					save_global_event_target_as = pc_relic_colonies_1
 				}
 			}
+			
 		}
 	}
 }

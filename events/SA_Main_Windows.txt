@@ -72,22 +72,8 @@ country_event = {#正常周报
 		text = Find_In_Pc_Relic_Colonies_Desc
 		trigger = {
 			owner = {
-				has_country_flag = find_in_pc_relic_colonies
+				has_country_flag = find_in_pc_relic_colonies_1
 			}
-		}
-	}
-}
-
-country_event = {
-	id = Stellaris_Annals.4
-	is_triggered_only = yes
-	hide_window = yes
-
-	immediate = {
-		add_research_option = tech_droid_workers
-		add_tech_progress = {
-			tech = tech_droid_workers
-			progress = 1
 		}
 	}
 }
@@ -180,4 +166,75 @@ country_event = {#战争专栏
 
 	title = Stellaris_Annals.3.name
 	desc = Stellaris_Annals.3.desc
+}
+country_event = {#物种标本专栏
+	id = Stellaris_Annals.4
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = News_Framework
+
+	trigger = {
+		owner = {
+			has_event_chain = specimen_procurement_chain
+		}
+	}
+
+	immediate = {
+		random_planet = {
+			limit = {
+				space_owner = {
+					is_same_value = root
+				}
+				habitability = {
+					who = prev.species
+					value >= 0.8
+				}
+			}
+			save_event_target_as = random_habite_planet
+		}
+	}
+
+	title = Stellaris_Annals.4.name
+	desc = {
+		text = Stellaris_Annals.4.1.desc
+		trigger = {
+			has_special_project = TARBLAC_PROCUREMENT
+		}
+	}
+	desc = {
+		text = Stellaris_Annals.4.2.desc
+		trigger = {
+			has_special_project = TASSARGOID_PROCUREMENT
+		}
+	}
+	desc = {
+		text = Stellaris_Annals.4.3.desc
+		trigger = {
+			has_special_project = ORINTHI_PROCUREMENT
+		}
+	}
+	desc = {
+		text = Stellaris_Annals.4.4.desc
+		trigger = {
+			has_special_project = SNIRAN_PROCUREMENT
+		}
+	}
+	desc = {
+		text = Stellaris_Annals.4.5.desc
+		trigger = {
+			has_special_project = GOOLANTHA_PROCUREMENT
+		}
+	}
+	desc = {
+		text = Stellaris_Annals.4.6.desc
+		trigger = {
+			has_special_project = UDDLORAN_PROCUREMENT
+		}
+	}
+	desc = {
+		text = Stellaris_Annals.4.7.desc
+		trigger = {
+			has_special_project = ZULCOR_PROCUREMENT
+		}
+	}
 }
