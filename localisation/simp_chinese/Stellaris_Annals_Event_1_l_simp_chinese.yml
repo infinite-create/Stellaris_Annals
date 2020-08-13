@@ -1,27 +1,34 @@
 ﻿l_simp_chinese:
- Stellaris_Annals.1.name:0 "[GetCountryNameTarget.GetStellarisNewsTitle]"
+ Stellaris_Annals.1.name:0 "[GetCountryNameTarget.GetStellarisAnnalsMainNewsTitle]"
  Stellaris_Annals.1.desc:0 "[GetCountryNameTarget.GetStellarisNewsDesc]"
 
  Stellaris_Annals.2.name:0 "[GetCountryNameTarget.GetStellarisAnnalsAPNewsTitle]"
  Stellaris_Annals.2.desc:0 "[GetCountryNameTarget.GetStellarisAnnalsAPNewsDesc]"
 
- Stellaris_Annals.3.name:0 ""[GetCountryNameTarget.GetStellarisNewsTitle]"
+ Stellaris_Annals.3.name:0 ""[GetCountryNameTarget.GetStellarisAnnalsMainNewsTitle]"
  Stellaris_Annals.3.desc:0 "[GetCountryNameTarget.GetStellarisNewsDesc]"
 
  Stellaris_Annals.4.name:0 "稀有外星物种调查"
- Stellaris_Annals.4.1.desc:0 "——摸鱼的社会学科学家§Y[Society_Research_Leader_Target.GetName]§!\n\n众所周知除了我们，还有许多分散在银河系中的，多种多样的生命。笔者作为社会学首席科学家，就曾有幸见到许多令人匪夷所思的外星物种，它们的存在，极大的......刺激了我的求知欲（当然也有我的视觉器官）。\n\n 作为第一期，我决定首先向大家展示的就是这个......§Y[random_habite_planet.GetName]§Y!的......额，一种植物。以下暂成为§Y[random_habite_planet.GetName]§Y!树好了（听说学名会导致销量下降？）。这种树木能以非常高的速度移动，其目的据推测可能是为了逃离母星远古时期的剧烈板块运动。听上去很扯，不过大型太空生物的存在，大概可以验证这个学说的可能......"
- Stellaris_Annals.4.2.desc:0 ""
+ Stellaris_Annals.4.1.desc:0 "——摸鱼的社会学科学家§Y[Society_Research_Leader_Target.GetName]§!\n\n众所周知除了我们，还有许多分散在银河系中的，多种多样的生命。笔者作为社会学首席科学家，就曾有幸见到许多令人匪夷所思的外星物种，它们的存在，极大的......刺激了我的求知欲（当然也有我的视觉器官）。\n\n 作为第一期，我决定首先向大家展示的就是这个......§Y[random_habite_planet.GetName]§!的......额，一种植物。以下暂成为§Y[random_habite_planet.GetName]§Y!树好了（听说学名会导致销量下降？）。这种树木能以非常高的速度移动，其目的据推测可能是为了逃离母星远古时期的剧烈板块运动。听上去很扯，不过大型太空生物的存在，大概可以验证这个学说的可能......"
+ Stellaris_Annals.4.2.desc:0 "——首席科学家§Y[Society_Research_Leader_Target.GetName]§!\n\n这期我们将介绍居住在§Y[random_habite_planet.GetName]§!的一种奇妙的动物……或者说植物？这种生物通体绿色，因为它们是一种植物（在本文中，我们将它称之为§Y[random_habite_planet.GetName]§!藤蔓）和动物（在本文中，我们将它称之为§Y[random_habite_planet.GetName]§!爬行者）的结合体。这两种物种处于某种共生关系——它们甚至共享一套神经系统。\n\n不过这在宇宙中并没有什么稀奇的，本文主要想讲述它们的繁殖方式。众所周知，不同的植物会具有不同的种子传播方式，比如借助风力、水流和生物。但是藤蔓爬行者不同，它们会使用一种奇特的方式，这种方式会将母体炸个粉碎。\n\n没错，它们会采用爆炸的方式。在繁殖期，它们会发出嘶嘶嘶的声音，然后猛然爆炸，这种爆炸能把沉重的种子炸出很远，这样新的藤蔓爬行者（Creeper Creeper）就不会和它们的上一代抢夺营养。从这个角度，也许“火之蔓族”会是个不错的名字——前提是它们能发展出自己的文明。\n\n一开始科学家完全无法理解它们为何使用这么壮烈的方式，因为它们自己也有腿部，能够行走。我们经过了大量的研究，得出的结论如下……"
  Stellaris_Annals.4.3.desc:0 ""
  Stellaris_Annals.4.4.desc:0 ""
  Stellaris_Annals.4.5.desc:0 ""
  Stellaris_Annals.4.6.desc:0 ""
  Stellaris_Annals.4.7.desc:0 ""
 
- Additional_TextBox_Title_1:0 "虚拟产品的末日？"
- Additional_TextBox_Desc_1:0 "寻访系列专栏作者——§Y弗欧阿维 史蒂夫§!\n\n不少热衷于虚拟产品的粉丝们都应该知道最近一次由国立传媒学院的“虚拟产品的未来”专题节目，该节目曾多次从正反论证了目前盛行于生活之中多款虚拟产品“即将衰败被取代的事实”。然而，就在今天国家传媒事务的负责人在最近发布了一篇公文，具体内容可点击此，其核心观点是“尽管存在下行困难，但传媒与娱乐产业终将仍将蓬勃发展”，列举了许多论文以及统计局最新的数据，显然，谣言终将不攻自破。"
+ Stellaris_Annals.5.name:0 "[GetCountryNameTarget.GetStellarisAnnalsDefaultNewsTitle]"
+ Stellaris_Annals.5.desc:0 ""
+
+ Additional_TextBox_Title_1:0 "虚拟产品的末日？——时代变了"
+ Additional_TextBox_Desc_1:0 "寻访系列专栏作者——§Y弗欧阿维 史蒂夫§!\n不少热衷于虚拟产品的粉丝们都应该知道最近一次由国立传媒学院的“虚拟产品的未来”专题节目，该节目曾多次从正反论证了目前盛行于生活之中多款虚拟产品“即将衰败被取代的事实”。\n\n然而，就在今天国家传媒事务的负责人在最近发布了一篇公文，具体内容可点击此，其核心观点是“尽管存在下行困难，但传媒与娱乐产业终将仍将蓬勃发展”，列举了许多论文以及统计局最新的数据，显然，谣言终将不攻自破。"
+ Additional_TextBox_Title_2:0 "斯坦纳帝国的覆灭——偏执和侥幸的化身"
+ Additional_TextBox_Desc_2:0 "寻访系列专栏作者——§Y比林斯 泰隆§!\n曾经纵横于国内市场的房地产巨头——斯坦纳地产有限公司在最近以一种惊人的方式结束了自己长达14年的商业活动，法院的传票以及债台高筑的现状，都无不证明着这一点。\n\n作为此公司的CEO也是创始人之一的波克霍丝的尸体也于今日被一个保安发现与花园之中，这个生前叱咤风云的人物现在早已经是一坨烂肉。而其他公司则正在以各种方式争夺其旗下的各类服务和产品，已经有莱比锡实业集团和格哈特维娜传媒有限公司宣称“收购将不会影响后续用户体验”，而这个帝国的轰然倒下到底的后续影响还不得而知。"
+ Additional_TextBox_Title_3:0 "“比那人”的风暴——荒谬或启迪"
+ Additional_TextBox_Desc_3:0 "寻访系列专栏作者——§Y克莱顿 格梅兹§!\n由比特的跳动公司在近日发售的一款名为《今天我不是比那人》的游戏陷入了一场舆论风暴，其作品描述了一个名为比那的文明在面对一次战争的时候，尽管实力强大但是选择了不战而降的一种具有荒诞主义色彩的故事。\n\n批评者称“此游戏以一种看似隐晦实则暴力且毫无事实根据的方式抹黑了国内一些社会团体”，而支持者称“与传统游戏不同，此作引入了对于一种互动式的，具有沉浸作用且启迪性剧情叙事手段，完全地向大众展示了游戏作为艺术的一面”。"
 
  Get_Ap_The_Flesh_Is_Weak_Title:0 "设计进化——浅谈义体植入"
- Get_Ap_The_Flesh_Is_Weak_Desc:0 "一直以来，我们都将血肉与机械作为划分人与智能人发区别，但随着义体技术的发展，我们逐渐模糊了这条界限。许多公民开始植入机械设备，电子元件，占据他们身体一半甚至大部分躯干。诚然，机械的手臂更有力量，机械的心脏更加澎湃，机械进化也一定是历史的大潮，但我们……一个自称为§Y[root.species.GetName]§!的族群，和机械的区别到底是什么？49%血肉+51%机械的§Y[root.species.GetName]§!还是§Y[root.species.GetName]§!吗？只剩1%血肉与99%机械的§Y[root.species.GetName]§!还是§Y[root.species.GetName]§!吗？如果有一个100%机械的种族，里面能模拟§Y[root.species.GetName]§!的神经数据，那么他们是§Y[root.species.GetName]§!吗？令人恐惧的是，大脑显然不再是我们物种的最后一道防线，“机械进化”的我们，到底是进化了还是灭绝了？用着电子模拟神经模拟情感而非化学物质调控的我们，还是我们吗？"
+ Get_Ap_The_Flesh_Is_Weak_Desc:0 "一直以来，我们都将血肉与机械作为划分人与智能人发区别，但随着义体技术的发展，我们逐渐模糊了这条界限。许多公民开始植入机械设备，电子元件，占据他们身体一半甚至大部分躯干。\n\n诚然，机械的手臂更有力量，机械的心脏更加澎湃，机械进化也一定是历史的大潮，但我们……一个自称为§Y[root.species.GetName]§!的族群，和机械的区别到底是什么？49%血肉+51%机械的§Y[root.species.GetName]§!还是§Y[root.species.GetName]§!吗？只剩1%血肉与99%机械的§Y[root.species.GetName]§!还是§Y[root.species.GetName]§!吗？如果有一个100%机械的种族，里面能模拟§Y[root.species.GetName]§!的神经数据，那么他们是§Y[root.species.GetName]§!吗？令人恐惧的是，大脑显然不再是我们物种的最后一道防线，“机械进化”的我们，到底是进化了还是灭绝了？用着电子模拟神经模拟情感而非化学物质调控的我们，还是我们吗？"
 
  Get_Ap_Synthetic_Evolution_Title:0 "崭新的开始"
  Get_Ap_Synthetic_Evolution_Desc:0 "通讯员 / §RNEO-华章§!\n\n随着最后一位有机公民接受了机械改造，轰轰烈烈的“机界升华”运动圆满结束，§Y[root.GetName]§!从此正式驶上了进化的快车道。\n\n从我们研究出第一台机械人以来，我们之中便一直在思索着这样一个问题：我们能否抛弃这身乏味的皮囊，去迎接更美好的未来呢？答案是可以的。经过了全民义体改造，我们的人民对进化为新的生命形式的意愿便越来越强，而我们在合成人格矩阵技术上取得的重大突破使解析意识的构成成为可能。终于，黎明的钟声敲响了，我们成功的解析了智慧生命的意识构成，抛弃肉体，全面升华的新道路自此成为可能！为了§Y[root.species.GetName]§!（若为亲外主义则为§Y[root.GetName]§!）的未来，我们抛弃了孱弱的肉体，迎来了光明的进化！\n\n对于国内外愚蠢的唯心主义份子无谓的质疑，我们的成功将对他们进行毫不留情的驳斥。他们否认科技力量，转而追求虚无飘渺的所谓“神灵”的行为十分的可笑，甚至比不上另外一些试图通过基因技术掌握命运的团体的十分之一。我们对他们可笑的行为不屑一顾，但我们也强烈呼吁，希望愚蠢的宗教份子们抛弃那些虚无飘渺的追求，投向科学技术的怀抱！"
@@ -36,16 +43,14 @@
  Default_News_Desc:0 "最近十分平静，并没有什么可以报道的"
 
  Research_Mine_Betharian_Title:0 "“贝石”的权力——炒作或确有其事？"
- Research_Mine_Betharian_Desc:0 "寻访系列专栏作者——米赫 蒂坎斯尼\n\n一位不愿意透露姓名已经退休的前星区总督最近在其超通讯媒体上宣称“要推动总督管理贝石地区权力正常化”，其许多文章和视频都认为，“现行制度下，国家没有权力剥夺总督管理对于贝石这一资源合法理由”。\n\n但令人感到诧异的是，他并没说明“贝石”是什么。许多网友以及一些学者也纷纷表示质疑此物质存在的真实性，但截至发稿时，该总督尚未有对该质疑有任何的正面回应。"
+ Research_Mine_Betharian_Desc:0 "寻访系列专栏作者——§Y米赫 蒂坎斯尼§!\n\n一位不愿意透露姓名已经退休的前星区总督最近在其超通讯媒体上宣称“要推动总督管理贝石地区权力正常化”，其许多文章和视频都认为，“现行制度下，国家没有权力剥夺总督管理对于贝石这一资源合法理由”。\n\n但令人感到诧异的是，他并没说明“贝石”是什么。许多网友以及一些学者也纷纷表示质疑此物质存在的真实性，不过令人在意的是，在国家披露的最新研究结果中已经表明我们已经能够使用一种最新的燃料——§M贝塞里安石§!，有些人认为“贝石”就是§M贝塞里安石§!，但截至发稿时，该总督尚未有对该质疑有任何的正面回应"
 
  Research_Droid_Workers_Title:0 "机器革命——智能人到底是什么？"
  Research_Droid_Workers_Desc:0 "在x-69型号的原型智能人成功并被量产后，智能人俨然成为了我们§Y[root.species.GetName]§!的一部分，无论是内政还是外交，无论是耗费体力或脑力，智能人都在很大程度上给予了我们公民便利性。\n\n然而，智能人展现出的优越性同样给我们敲响警钟，这些机器比我们更有耐力，更有体力，还能与我们流利交流，某些程度上，它们的计算系统比我们也更加聪明合理，覆盖了仿生皮的它们甚至曾被误认为§Y[root.species.GetName]§!过。在智能人统治世界电影盛行的当下，我们切实应该思考何为智能人，它们究竟该处于什么地位？我们又该如何与他们相处呢？"
 
-  Research_Jump_Drive_Title:0 "“曲率引擎”——反智主义的盛宴"
+ Research_Jump_Drive_Title:0 "“曲率引擎”——反智主义的盛宴"
  Research_Jump_Drive_Desc:0 "寻访系列专栏作者——§Y戴米尔 帕维其§!\n\n最近，一位男性公民引起了舆论的广泛关注，其自称“受不可名状之物启发的物理学博士”，曾经多次在超通讯论坛上宣称自己“发明了曲率引擎，是一种全新的超光速手段”，而一位国立物理学院院士指出“曲率引擎是是不符合我们这个宇宙的规律的，只能是存在于幻想之中的产物”，而有网友表示“对于这种民科行为，政府应该立法禁止”。根据国立科研综合院公布的数据表示，仅仅在今年就有超过两百个个体或者团体宣称自己发明或者完成了“曲率引擎”。"
 
- Research_Hyper_Entertainment_Forum_Title:0 "虚拟产品的末日？——时代变了"
- Research_Hyper_Entertainment_Forum_Desc:0 "寻访系列专栏作者——§Y弗欧阿维 史蒂夫§!\n\n不少热衷于虚拟产品的粉丝们都应该知道最近一次由国立传媒学院的“虚拟产品的未来”专题节目，该节目曾多次从正反论证了目前盛行于生活之中多款虚拟产品“即将衰败被取代的事实”。然而，就在今天国家传媒事务的负责人在最近发布了一篇公文，具体内容可点击此，其核心观点是“尽管存在下行困难，但传媒与娱乐产业终将仍将蓬勃发展”，列举了许多论文以及统计局最新的数据，显然，谣言终将不攻自破。"
 
  Habitable_Worlds_Survey_Title:0 "我们的新家园"
  Habitable_Worlds_Survey_Desc:"通讯员 / §Y华章§!\n\n近日，国家航天管理部发布通告，宣布启动目标为寻找宜居行星的“新家园”计划。\n\n从远古时代以来，我们的祖先就开始仰望星辰。我们的历史神话之中充斥着无数“乐园”的踪影。在我们彻底掌控母星之后，对远方土地的热情并没有消失，而是转变成了对星辰大海的渴望，推动着我们文明的进步。\n\n在近日的一项调查中，将近七成的受访人员表示想要“踏上新世界，成为殖民的先驱者”。在新闻发布会上，航天管理部对新一轮的殖民潮表示乐观，并承诺会以“新家园”计划为契机，推动§Y[root.species.GetName]§!宇宙开拓事业的进一步发展。"

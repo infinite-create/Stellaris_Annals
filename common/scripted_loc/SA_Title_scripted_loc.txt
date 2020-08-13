@@ -1,5 +1,5 @@
 Stellaris_Annals_News_Title = {
-	name = GetStellarisNewsTitle
+	name = GetStellarisAnnalsMainNewsTitle
 	
 	text = {#研究贝石发电场
 		localization_key = Research_Mine_Betharian_Title
@@ -22,14 +22,6 @@ Stellaris_Annals_News_Title = {
 		trigger = {
 			owner = {
 				has_country_flag = research_tech_jump_drive_1
-			}
-		}
-	}
-	text = {
-		localization_key = Research_Hyper_Entertainment_Forum_Title
-		trigger = {
-			owner = {
-				has_country_flag = research_tech_hyper_entertainment_forum
 			}
 		}
 	}
@@ -102,6 +94,33 @@ Stellaris_Annals_AP_News_Title = {
 				NOR = {
 					has_country_flag = get_ap_the_flesh_is_weak
 				}
+			}
+		}
+	}
+}
+Stellaris_Annals_Default_News_Title = {
+	name = GetStellarisAnnalsDefaultNewsTitle
+	text = {
+		localization_key = Default_SA_News_1_Title
+		trigger = {
+			owner = {
+				has_country_flag = default_sa_news_1
+			}
+		}
+	}
+	text = {
+		localization_key = Default_SA_News_2_Title
+		trigger = {
+			owner = {
+				has_country_flag = default_sa_news_2
+			}
+		}
+	}
+	text = {
+		localization_key = Default_SA_News_3_Title
+		trigger = {
+			owner = {
+				has_country_flag = default_sa_news_3
 			}
 		}
 	}
