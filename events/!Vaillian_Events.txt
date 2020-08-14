@@ -330,7 +330,8 @@ country_event = {#物种样本调查
 					owner = root
 				}
 			}
-			random_planet = { # GOOLANTHA
+			random_planet = {
+				# GOOLANTHA
 				limit = {
 					is_surveyed = {
 						who = ROOT

@@ -45,11 +45,22 @@ country_event = {#正常周报
 		}
 	}
 
+	after = {
+		if = {
+			limit = { 
+				NOT = {
+					has_country_flag = first_arrived_in_space
+				}
+			}
+			set_country_flag = first_arrived_in_space
+		}
+	}
+
 	title = Stellaris_Annals.1.name
 	desc = {
 		text = Stellaris_Annals.1.desc
 		trigger = {
-			NOR = {
+			OR = {
 				has_country_flag = time_mass_extinction
 				has_country_flag = time_habitable_worlds_survey
 			}

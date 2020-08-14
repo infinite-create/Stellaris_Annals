@@ -1,5 +1,17 @@
 Stellaris_Annals_News_Desc = {
 	name = GetStellarisNewsDesc
+
+	text = {#开局
+		localization_key = First_Arrived_In_Space_Desc
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = first_arrived_in_space
+				}
+			}
+		}
+	}
+
 	text = {#研究贝石发电场
 		localization_key = Research_Mine_Betharian_Desc
 		trigger = {
