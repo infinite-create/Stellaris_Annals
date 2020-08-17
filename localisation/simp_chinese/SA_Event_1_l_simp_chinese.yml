@@ -1,6 +1,6 @@
 ﻿l_simp_chinese:
- Stellaris_Annals.1.name:0 "[GetCountryNameTarget.GetStellarisAnnalsMainNewsTitle]"
- Stellaris_Annals.1.desc:0 "[GetCountryNameTarget.GetStellarisNewsDesc]"
+ TMWT_Title:0 "[GetCountryNameTarget.GetStellarisAnnalsMainNewsTitle]"
+ TMWT_Desc:0 "[GetCountryNameTarget.GetStellarisNewsDesc]"
 
  First_Arrived_In_Space_Title:0 "迈向星辰的第一步"
  First_Arrived_In_Space_Desc:0 "千万年以来，我们都翘首以盼能够探索那深邃的太空，也许这途中我们有过彷徨，失去向往太空的激情；有过矛盾，命悬于一触即发的战争当中；有过失落，迷失在我们一无所知的浩瀚宇宙中......\n\n但这些仍然没有减弱我们对遥远太空的想象以及渴望，§Y“云母屏风烛影深，长河渐落晓星沉”§!，§Y“星垂平野阔，月涌大江流”§!......多少人感叹于宇宙的飘渺宏大，它一直是我们所向往的对象，不论是过去还是现在。\n\n我们跨过了历史的长河来到现在，随着第一台超光速引擎的诞生，我们的过去成为了真正的历史：不论我们有着怎样的过去，那些都已经不再重要了，群星于我们而言可谓已然触手可及！我们接下来都应该一同展望无尽的太空，探索发现遥远的群星。前路漫漫，一切都是未知，但我们已然无所畏惧，我们将秉持着自己的信念，于今日，迈向属于我们的未来！\n\n§B我们的征途是——星辰大海！§!"

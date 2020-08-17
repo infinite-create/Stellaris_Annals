@@ -1,0 +1,214 @@
+namespace = Stellaris_Annals
+
+country_event = {#三大飞升专报
+	id = Stellaris_Annals.2
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = The_Milky_Way_Times_A
+
+	trigger = {
+		is_ai = no
+		if = {
+			limit = {#合成进化
+				has_ascension_perk = ap_synthetic_evolution
+			}
+			NOT = {
+				has_country_flag = get_ap_synthetic_evolution
+			}
+		}
+		else_if = {
+			limit = { #超凡入圣
+				has_ascension_perk = ap_transcendence
+			}
+			NOT = {
+				has_country_flag = get_ap_transcendence
+			}
+		}
+		else_if = {
+			limit = { #掌控进化
+				has_ascension_perk = ap_evolutionary_mastery
+			}
+			NOT = {
+				has_country_flag = get_ap_evolutionary_mastery
+			}
+		}
+		if = {
+			limit = {#血肉苦弱
+				has_ascension_perk = ap_the_flesh_is_weak
+			}
+			NOT = {
+				has_country_flag = get_ap_the_flesh_is_weak
+			}
+		}
+		else = {
+			always = no
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = { 
+				has_ascension_perk = ap_synthetic_evolution
+			}
+			set_country_flag = get_ap_synthetic_evolution
+		}
+		else_if = {
+			limit = { 
+				has_ascension_perk = ap_transcendence
+			}
+			set_country_flag = get_ap_transcendence
+		}
+		else_if = {
+			limit = {
+				has_ascension_perk = ap_evolutionary_mastery
+			}
+			set_country_flag = get_ap_evolutionary_mastery
+		}
+		else_if = {
+			limit = {
+				has_ascension_perk = ap_the_flesh_is_weak
+			}
+			set_country_flag = get_ap_the_flesh_is_weak
+		}
+	}
+
+	title = Stellaris_Annals.2.name
+	desc = Stellaris_Annals.2.desc
+}
+
+country_event = {#战争专栏
+	id = Stellaris_Annals.3
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = The_Milky_Way_Times_A
+
+	trigger = {
+		
+	}
+
+	title = Stellaris_Annals.3.name
+	desc = Stellaris_Annals.3.desc
+}
+country_event = {#物种标本专栏
+	id = Stellaris_Annals.4
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = The_Milky_Way_Times_A
+
+	trigger = {
+		owner = {
+			has_event_chain = specimen_procurement_chain
+		}
+	}
+
+	immediate = {
+		random_planet = {
+			limit = {
+				space_owner = {
+					is_same_value = root
+				}
+				habitability = {
+					who = prev.species
+					value >= 0.8
+				}
+			}
+			save_event_target_as = random_habite_planet
+		}
+	}
+
+	title = Stellaris_Annals.4.name
+	desc = {
+		text = Stellaris_Annals.4.1.desc
+		trigger = {
+			has_special_project = TARBLAC_PROCUREMENT
+		}
+	}
+	desc = {
+		text = Stellaris_Annals.4.2.desc
+		trigger = {
+			has_special_project = TASSARGOID_PROCUREMENT
+		}
+	}
+	desc = {
+		text = Stellaris_Annals.4.3.desc
+		trigger = {
+			has_special_project = ORINTHI_PROCUREMENT
+		}
+	}
+	desc = {
+		text = Stellaris_Annals.4.4.desc
+		trigger = {
+			has_special_project = SNIRAN_PROCUREMENT
+		}
+	}
+	desc = {
+		text = Stellaris_Annals.4.5.desc
+		trigger = {
+			has_special_project = GOOLANTHA_PROCUREMENT
+		}
+	}
+	desc = {
+		text = Stellaris_Annals.4.6.desc
+		trigger = {
+			has_special_project = UDDLORAN_PROCUREMENT
+		}
+	}
+	desc = {
+		text = Stellaris_Annals.4.7.desc
+		trigger = {
+			has_special_project = ZULCOR_PROCUREMENT
+		}
+	}
+}
+
+country_event = {#通用新闻
+	id = Stellaris_Annals.5
+	diplomatic = yes
+	custom_gui = The_Milky_Way_Times_A
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	trigger = {
+		is_ai = no
+	}
+
+	immediate = {
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					has_country_flag = default_sa_news_1
+				}
+				set_country_flag = default_sa_news_1
+
+				remove_country_flag = default_sa_news_2
+				remove_country_flag = default_sa_news_3
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_country_flag = default_sa_news_2
+				}
+				set_country_flag = default_sa_news_2
+
+				remove_country_flag = default_sa_news_1
+				remove_country_flag = default_sa_news_3
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					has_country_flag = default_sa_news_3
+				}
+				set_country_flag = default_sa_news_3
+
+				remove_country_flag = default_sa_news_1
+				remove_country_flag = default_sa_news_2
+			}
+		}
+	}
+
+	title = Stellaris_Annals.5.name
+	desc = Stellaris_Annals.5.desc
+}

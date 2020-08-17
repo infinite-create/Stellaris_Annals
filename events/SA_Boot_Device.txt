@@ -15,9 +15,20 @@ country_event = {#获取国家名称
 		}
 	}
 }
+# country_event = {#集成触发器
+# 	id = SA_Boot_Deveice.1
+# 	is_triggered_only = yes
+# 	hide_window = yes
+
+# 	immediate = {
+# 		country_event = {
+# 			id = SA_Boot_Deveice.2
+# 		}
+# 	}
+# }
 
 country_event = {#研究科技引导器
-	id = SA_Boot_Deveice.1
+	id = SA_Boot_Deveice.2
 	is_triggered_only = yes
 	hide_window = yes
 
@@ -31,47 +42,58 @@ country_event = {#研究科技引导器
 	}
 
 	immediate = {
-		if = {#贝石发电
-			limit = { 
-				last_increased_tech = tech_mine_betharian 
-			}
-			set_timed_country_flag = {
-				flag = research_tech_mine_betharian
-				days = 180
-			}
-		}
-		if = {#智能人
-			limit = { 
-				last_increased_tech = tech_droid_workers
-			}
-			set_timed_country_flag = {
-				flag = research_tech_droid_workers
-				days = 180
-			}
-		}
 		if = {
-			limit = {#跃迁引擎
-				last_increased_tech = tech_jump_drive_1
+			limit = { #防止同时出现两个flag，导致loc对应文本产生随机
+				NOT = {
+					has_country_flag = setout_news
+				}
 			}
-			set_timed_country_flag = {
-				flag = research_tech_jump_drive_1
-				days = 180
+			if = {#贝石发电
+				limit = { 
+					last_increased_tech = tech_mine_betharian 
+				}
+				set_timed_country_flag = {
+					flag = research_tech_mine_betharian
+					days = 180
+				}
 			}
-		}
-		if = {
-			limit = {#极乐广场 
-				last_increased_tech = tech_hyper_entertainment_forum
+			if = {#智能人
+				limit = { 
+					last_increased_tech = tech_droid_workers
+				}
+				set_timed_country_flag = {
+					flag = research_tech_droid_workers
+					days = 180
+				}
 			}
-			set_timed_country_flag = {
-				flag = research_tech_hyper_entertainment_forum
-				days = 180
+			if = {
+				limit = {#跃迁引擎
+					last_increased_tech = tech_jump_drive_1
+				}
+				set_timed_country_flag = {
+					flag = research_tech_jump_drive_1
+					days = 180
+				}
+			}
+			if = {
+				limit = {#极乐广场 
+					last_increased_tech = tech_hyper_entertainment_forum
+				}
+				set_timed_country_flag = {
+					flag = research_tech_hyper_entertainment_forum
+					days = 180
+				}
+			}
+			set_country_flag = setout_news #判定是否通过引导器触发
+			country_event = {
+				id = SA_Boot_Deveice.100
 			}
 		}
 	}
 }
 
 planet_event = {#殖民地引导器
-	id = SA_Boot_Deveice.2
+	id = SA_Boot_Deveice.3
 	is_triggered_only = yes
 	hide_window = yes
 
@@ -81,26 +103,80 @@ planet_event = {#殖民地引导器
 
 	immediate = {
 		owner = {
-			change_variable = {
-				which = num_pc_relic_colonies
-				value = 1
-			}
 			if = {
 				limit = { 
-					check_variable = {
-						which = num_pc_relic_colonies
-						value = 1
+					NOT = {
+						has_country_flag = setout_news
 					}
 				}
-				set_timed_country_flag = {
-					flag = find_in_pc_relic_colonies_1
-					days = 180
+				change_variable = {
+					which = num_pc_relic_colonies
+					value = 1
 				}
-				prev = {
-					save_global_event_target_as = pc_relic_colonies_1
+				if = {
+					limit = { 
+						check_variable = {
+							which = num_pc_relic_colonies
+							value = 1
+						}
+					}
+					set_timed_country_flag = {
+						flag = find_in_pc_relic_colonies_1
+						days = 180
+					}
+					prev = {
+						save_global_event_target_as = pc_relic_colonies_1
+					}
+				}
+				set_country_flag = setout_news
+			}
+		}
+	}
+}
+
+country_event = {#TMWT UI引导器
+	id = SA_Boot_Deveice.100
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		random_list = {
+			10 = {
+				if = {
+					limit = { #一阶判定：是否通过正常引导器触发
+						has_country_flag = setout_news
+					}
+					set_country_flag = TMWT_Start_Flag
+				}
+				if = {
+					limit = { #二阶判定：是否处于休刊期间
+						NOT = {
+							has_country_flag = A_Prepare_Flag
+						}
+					}
+					country_event = {
+						id = SA_TMWT.1
+					}
 				}
 			}
-			
+			10 = {
+				if = {
+					limit = { 
+						has_country_flag = setout_news
+					}
+					set_country_flag = TMWT_Start_Flag
+				}
+				if = {
+					limit = { 
+						NOT = {
+							has_country_flag = A_Prepare_Flag
+						}
+					}
+					country_event = {
+						id = SA_TMWT.2
+					}
+				}
+			}
 		}
 	}
 }

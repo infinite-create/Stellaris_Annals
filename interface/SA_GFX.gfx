@@ -1,6 +1,11 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_News_Background"
-		textureFile = "gfx/interface/backgrounds/News_Background.dds"
+		name = "GFX_TMWT_Background_1"
+		textureFile = "gfx/interface/backgrounds/TMWT_Background_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_First_TMWT_Background"
+		textureFile = "gfx/interface/backgrounds/First_TMWT_Background.dds"
 	}
 }

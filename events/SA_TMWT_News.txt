@@ -1,0 +1,201 @@
+namespace = SA_TMWT
+
+country_event = {
+	id = SA_TMWT.0
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = The_Milky_Way_Times_Start
+
+	trigger = {
+		is_ai = no
+	}
+
+	immediate = {
+		country_event = {#启动银河时报
+			id = SA_Boot_Deveice.100
+			days = 180
+		}
+	}
+
+	title = TMWT_Title
+	desc = TMWT_Desc
+
+	after = {
+		set_country_flag = first_arrived_in_space
+	}
+}
+
+country_event = {#银河时报
+	id = SA_TMWT.1
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = The_Milky_Way_Times_A
+
+	trigger = {
+		has_country_flag = TMWT_Start_Flag
+		is_ai = no
+	}
+
+	immediate = {
+		set_timed_country_flag = {
+			flag = A_Prepare_Flag
+			days = 180
+		}
+		random_owned_leader = {
+			limit = {
+				is_researching_area = society
+			}
+			save_event_target_as = Society_Research_Leader_Target
+		}
+		random_owned_leader = {
+			limit = {
+				is_researching_area = physics
+			}
+			save_event_target_as = Physics_Research_Leader_Target
+		}
+		random_owned_leader = {
+			limit = {
+				is_researching_area = engineering
+			}
+			save_event_target_as = Engineering_Research_Leader_Target
+		}
+		owner = {
+			if = {
+				limit = { 
+					NOT = {
+						exists = event_target:GetCountryNameTarget
+					}
+				}
+				save_global_event_target_as = GetCountryNameTarget
+			}
+		}
+	}
+
+	after = {
+		remove_country_flag = TMWT_Start_Flag
+		remove_country_flag = setout_news
+		country_event = {#尝试触发引导器，伪循环触发机制
+			id = SA_Boot_Deveice.100
+			days = 180
+		}
+	}
+
+	title = TMWT_Title
+	desc = {
+		text = TMWT_Desc
+		trigger = {
+			OR = {
+				has_country_flag = time_mass_extinction
+				has_country_flag = time_habitable_worlds_survey
+			}
+		}
+	}
+	#标题采用loc，描述采用desc
+	desc = {#宜居星球事件链
+		text = Habitable_Worlds_Survey_Desc
+		trigger = {
+			has_country_flag = time_habitable_worlds_survey
+		}
+	}
+	desc = {#大灭绝事件链
+		text = The_Mass_Extinction_Desc
+		trigger = {
+			has_country_flag = time_mass_extinction
+		}
+	}
+	desc = {#第一次殖民遗落球
+		text = Find_In_Pc_Relic_Colonies_Desc
+		trigger = {
+			owner = {
+				has_country_flag = find_in_pc_relic_colonies_1
+			}
+		}
+	}
+}
+country_event = {#正常周报
+	id = SA_TMWT.2
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = The_Milky_Way_Times_A.1
+
+	trigger = {
+		has_country_flag = TMWT_Start_Flag
+		is_ai = no
+	}
+
+	immediate = {
+		set_timed_country_flag = {
+			flag = A_Prepare_Flag
+			days = 180
+		}
+		random_owned_leader = {
+			limit = {
+				is_researching_area = society
+			}
+			save_event_target_as = Society_Research_Leader_Target
+		}
+		random_owned_leader = {
+			limit = {
+				is_researching_area = physics
+			}
+			save_event_target_as = Physics_Research_Leader_Target
+		}
+		random_owned_leader = {
+			limit = {
+				is_researching_area = engineering
+			}
+			save_event_target_as = Engineering_Research_Leader_Target
+		}
+		owner = {
+			if = {
+				limit = { 
+					NOT = {
+						exists = event_target:GetCountryNameTarget
+					}
+				}
+				save_global_event_target_as = GetCountryNameTarget
+			}
+		}
+	}
+
+	after = {
+		remove_country_flag = TMWT_Start_Flag
+		remove_country_flag = setout_news
+		country_event = {#尝试触发引导器，伪循环触发机制
+			id = SA_Boot_Deveice.100
+			days = 180
+		}
+	}
+
+	title = TMWT_Title
+	desc = {
+		text = TMWT_Desc
+		trigger = {
+			OR = {
+				has_country_flag = time_mass_extinction
+				has_country_flag = time_habitable_worlds_survey
+			}
+		}
+	}
+	#标题采用loc，描述采用desc
+	desc = {#宜居星球事件链
+		text = Habitable_Worlds_Survey_Desc
+		trigger = {
+			has_country_flag = time_habitable_worlds_survey
+		}
+	}
+	desc = {#大灭绝事件链
+		text = The_Mass_Extinction_Desc
+		trigger = {
+			has_country_flag = time_mass_extinction
+		}
+	}
+	desc = {#第一次殖民遗落球
+		text = Find_In_Pc_Relic_Colonies_Desc
+		trigger = {
+			owner = {
+				has_country_flag = find_in_pc_relic_colonies_1
+			}
+		}
+	}
+}

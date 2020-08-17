@@ -1,6 +1,6 @@
 on_game_start_country = {
 	events = {
-		Stellaris_Annals.1
+		SA_TMWT.0
 		SA_Boot_Deveice.0
 	}
 }
@@ -8,17 +8,18 @@ on_game_start_country = {
 on_monthly_pulse_country = {
 	events = {
 		Stellaris_Annals.2
+		SA_Boot_Deveice.100 #用于清除缓存flag，强制触发事件
 	}
 }
 
 on_tech_increased = {
 	events = {
-		SA_Boot_Deveice.1
+		SA_Boot_Deveice.2
 	}
 }
 
 on_colonized = {
 	events = {
-		SA_Boot_Deveice.2
+		SA_Boot_Deveice.3
 	}
 }
