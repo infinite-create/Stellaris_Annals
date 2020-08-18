@@ -66,24 +66,6 @@ country_event = {#研究科技引导器
 					days = 180
 				}
 			}
-			if = {
-				limit = {#跃迁引擎
-					last_increased_tech = tech_jump_drive_1
-				}
-				set_timed_country_flag = {
-					flag = research_tech_jump_drive_1
-					days = 180
-				}
-			}
-			if = {
-				limit = {#极乐广场 
-					last_increased_tech = tech_hyper_entertainment_forum
-				}
-				set_timed_country_flag = {
-					flag = research_tech_hyper_entertainment_forum
-					days = 180
-				}
-			}
 			set_country_flag = setout_news #判定是否通过引导器触发
 			country_event = {
 				id = SA_Boot_Deveice.100

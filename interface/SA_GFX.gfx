@@ -1,11 +1,33 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_TMWT_Background_1"
-		textureFile = "gfx/interface/backgrounds/TMWT_Background_1.dds"
+		name = "GFX_TMWT_Background_A"
+		textureFile = "gfx/interface/backgrounds/TMWT_Background_A.dds"
+	}
+
+	spriteType = {
+		name = "GFX_TMWT_Background_B"
+		textureFile = "gfx/interface/backgrounds/TMWT_Background_B.dds"
 	}
 
 	spriteType = {
 		name = "GFX_First_TMWT_Background"
 		textureFile = "gfx/interface/backgrounds/First_TMWT_Background.dds"
+	}
+
+	spriteType = {
+		name = "GFX_DailyLife_Background"
+		textureFile = "gfx/interface/button/DailyLife_Background.dds"
+	}
+	spriteType = {
+		name = "GFX_Military_Background"
+		textureFile = "gfx/interface/button/Military_Background.dds"
+	}
+	spriteType = {
+		name = "GFX_Politecs_Background"
+		textureFile = "gfx/interface/button/Politecs_Background.dds"
+	}
+	spriteType = {
+		name = "GFX_Technology_Button"
+		textureFile = "gfx/interface/button/Technology_Button.dds"
 	}
 }

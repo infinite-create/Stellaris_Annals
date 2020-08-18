@@ -1,0 +1,75 @@
+Special_Column_Technology = {
+	allow = {
+		always = yes
+	}
+
+	potential = {
+		always = yes
+	}
+
+	effect = {
+		custom_tooltip = "Special_Column_Technology_Tooltip"
+		hidden_effect = {
+			country_event = {
+				id = SA_Special_Column_Boot_Device.0
+			}
+		}
+	}
+}
+
+Special_Column_Military = {
+	allow = {
+		always = yes
+	}
+
+	potential = {
+		always = yes
+	}
+
+	effect = {
+		custom_tooltip = "Special_Column_Military_Tooltip"
+		hidden_effect = {
+			country_event = {
+				id = SA_Special_Column_Boot_Device.1
+			}
+		}
+	}
+}
+
+Special_Column_DailyLife = {
+	allow = {
+		always = yes
+	}
+
+	potential = {
+		always = yes
+	}
+
+	effect = {
+		custom_tooltip = "Special_Column_DailyLife_Tooltip"
+		hidden_effect = {
+			country_event = {
+				id = SA_Special_Column_Boot_Device.2
+			}
+		}
+	}
+}
+
+Special_Column_Politics = {
+	allow = {
+		always = yes
+	}
+
+	potential = {
+		always = yes
+	}
+
+	effect = {
+		custom_tooltip = "Special_Column_Politics_Tooltip"
+		hidden_effect = {
+			country_event = {
+				id = SA_Special_Column_Boot_Device.2
+			}
+		}
+	}
+}

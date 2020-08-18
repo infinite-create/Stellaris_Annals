@@ -1,0 +1,20 @@
+namespace = SA_Special_Column_Politics
+
+country_event = {
+	id = SA_Special_Column_Politics.1
+	is_triggered_only = yes
+	title = SA_Special_Column_Politics.1.name
+	desc = SA_Special_Column_Politics.1.desc
+}
+country_event = {
+	id = SA_Special_Column_Politics.2
+	is_triggered_only = yes
+	title = SA_Special_Column_Politics.2.name
+	desc = SA_Special_Column_Politics.2.desc
+}
+country_event = {
+	id = SA_Special_Column_Politics.3
+	is_triggered_only = yes
+	title = SA_Special_Column_Politics.3.name
+	desc = SA_Special_Column_Politics.3.desc
+}

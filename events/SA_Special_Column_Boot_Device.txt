@@ -1,0 +1,102 @@
+namespace = SA_Special_Column_Boot_Device
+
+######科技
+country_event = {#随机触发器
+	id = SA_Special_Column_Boot_Device.0
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		random_list = {
+			10 = {
+				country_event = {
+					id = SA_Special_Column_Technology.1
+				}
+			}
+			10 = {
+				country_event = {
+					id = SA_Special_Column_Technology.2
+				}
+			}
+			10 = {
+				country_event = {
+					id = SA_Special_Column_Technology.3
+				}
+			}
+		}
+	}
+}
+######军事
+country_event = {#随机触发器
+	id = SA_Special_Column_Boot_Device.1
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		random_list = {
+			10 = {
+				country_event = {
+					id = SA_Special_Column_Military.1
+				}
+			}
+			10 = {
+				country_event = {
+					id = SA_Special_Column_Military.2
+				}
+			}
+			10 = {
+				country_event = {
+					id = SA_Special_Column_Military.3
+				}
+			}
+		}
+	}
+}
+######日常
+country_event = {#随机触发器
+	id = SA_Special_Column_Boot_Device.2
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		random_list = {
+			10 = {
+				country_event = {
+					id = SA_Special_Column_DailyLife.1
+				}
+			}
+			10 = {
+				country_event = {
+					id = SA_Special_Column_DailyLife.2
+				}
+			}
+			10 = {
+				country_event = {
+					id = SA_Special_Column_DailyLife.3
+				}
+			}
+		}
+	}
+}
+######政治
+country_event = {#随机触发器
+	id = SA_Special_Column_Boot_Device.2
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		random_list = {
+			10 = {
+				country_event = {
+					id = SA_Special_Column_Politics.1
+				}
+			}
+			10 = {
+				country_event = {
+					id = SA_Special_Column_Politics.2
+				}
+			}
+			10 = {
+				country_event = {
+					id = SA_Special_Column_Politics.3
+				}
+			}
+		}
+	}
+}

@@ -28,14 +28,6 @@ Stellaris_Annals_News_Title = {
 			}
 		}
 	}
-	text = {#研究跃迁引擎
-		localization_key = Research_Jump_Drive_Title
-		trigger = {
-			owner = {
-				has_country_flag = research_tech_jump_drive_1
-			}
-		}
-	}
 	text = {#宜居星球调查
 		localization_key = Habitable_Worlds_Survey_Title
 		trigger = {
@@ -105,33 +97,6 @@ Stellaris_Annals_AP_News_Title = {
 				NOR = {
 					has_country_flag = get_ap_the_flesh_is_weak
 				}
-			}
-		}
-	}
-}
-Stellaris_Annals_Default_News_Title = {
-	name = GetStellarisAnnalsDefaultNewsTitle
-	text = {
-		localization_key = Default_SA_News_1_Title
-		trigger = {
-			owner = {
-				has_country_flag = default_sa_news_1
-			}
-		}
-	}
-	text = {
-		localization_key = Default_SA_News_2_Title
-		trigger = {
-			owner = {
-				has_country_flag = default_sa_news_2
-			}
-		}
-	}
-	text = {
-		localization_key = Default_SA_News_3_Title
-		trigger = {
-			owner = {
-				has_country_flag = default_sa_news_3
 			}
 		}
 	}
