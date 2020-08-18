@@ -1,7 +1,7 @@
 namespace = SA_TMWT
-
+#选择不同的ui
 country_event = {
-	id = SA_TMWT.0
+	id = SA_TMWT.0#初始新闻
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = The_Milky_Way_Times_A
