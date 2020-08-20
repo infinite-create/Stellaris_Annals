@@ -1,5 +1,6 @@
 on_game_start_country = {
 	events = {
+		SA_Count.0
 		SA_TMWT.0
 		SA_Boot_Deveice.0
 	}

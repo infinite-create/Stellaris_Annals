@@ -23,6 +23,22 @@ spriteTypes = {
 		textureFile = "gfx/interface/button/Military_Background.dds"
 	}
 	spriteType = {
+		name = "GFX_New_DailyLife_Background"
+		textureFile = "gfx/interface/button/New_DailyLife_Background.dds"
+	}
+	spriteType = {
+		name = "GFX_New_Military_Background"
+		textureFile = "gfx/interface/button/New_Military_Background.dds"
+	}
+	spriteType = {
+		name = "GFX_New_Politecs_Background"
+		textureFile = "gfx/interface/button/New_Politecs_Background.dds"
+	}
+	spriteType = {
+		name = "GFX_New_Technology_Button"
+		textureFile = "gfx/interface/button/New_Technology_Button.dds"
+	}
+	spriteType = {
 		name = "GFX_Politecs_Background"
 		textureFile = "gfx/interface/button/Politecs_Background.dds"
 	}
