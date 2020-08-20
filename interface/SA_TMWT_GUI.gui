@@ -707,28 +707,28 @@ guiTypes = {
 				position = { x = 1150 y = 162 }
 				size = {width = 230 height = 290 }
 				effect = Special_Column_Technology
-				quadTextureSprite = "GFX_Technology_Button"
+				quadTextureSprite = "GFX_New_Technology_Button"
 			}
 			effectButtonType = {
 				name = "Military"
 				position = { x = 20 y = 162 }
 				size = {width = 230 height = 290 }
 				effect = Special_Column_Military
-				quadTextureSprite = "GFX_Military_Background"
+				quadTextureSprite = "GFX_New_Military_Background"
 			}
 			effectButtonType = {
 				name = "Politics"
 				position = { x = 20 y = 478 }
 				size = {width = 230 height = 290 }
 				effect = Special_Column_Politics
-				quadTextureSprite = "GFX_Politecs_Background"
+				quadTextureSprite = "GFX_New_Politecs_Background"
 			}
 			effectButtonType = {
 				name = "DailyLife"
 				position = { x = 1150 y = 478 }
 				size = {width = 230 height = 290 }
 				effect = Special_Column_DailyLife
-				quadTextureSprite = "GFX_DailyLife_Background"
+				quadTextureSprite = "GFX_New_DailyLife_Background"
 			}
 		}
 	}
