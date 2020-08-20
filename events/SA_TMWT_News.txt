@@ -4,7 +4,7 @@ country_event = {
 	id = SA_TMWT.0#初始新闻
 	is_triggered_only = yes
 	diplomatic = yes
-	custom_gui = The_Milky_Way_Times_A
+	custom_gui = The_Milky_Way_Times_B
 
 	trigger = {
 		is_ai = no
@@ -29,7 +29,7 @@ country_event = {#银河时报
 	id = SA_TMWT.1
 	is_triggered_only = yes
 	diplomatic = yes
-	custom_gui = The_Milky_Way_Times_B
+	custom_gui = The_Milky_Way_Times_A
 
 	trigger = {
 		has_country_flag = TMWT_Start_Flag
